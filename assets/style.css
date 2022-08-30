@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  border-radius: 0 !important;
+  box-sizing: border-box;
+}
+
+#page-title {
+  padding: 10px !important;
+  color: #007bff;
+}
+
+#page-title::before {
+  content: "./";
+}
+
+/* dashboard home page styles */
+.dashboard-wrapper {
+  padding: 30px;
+  width: 100%;
+  border-radius: 0;
+  margin-top: 30px;
+}
+.dashboard-wrapper > .row {
+  display: flex;
+}
+
+.dashboard-wrapper > .row > :first-child {
+  flex: 3;
+}
+.dashboard-wrapper > .row > :last-child {
+  flex: 1;
+  text-align: center;
+}
